@@ -1,0 +1,7 @@
+{
+    "task": "segmentation",
+    "image_threshold": 66.11239624023438,
+    "pixel_threshold": 55.05552291870117,
+    "min": 0.3433919847011566,
+    "max": 93.7091064453125
+}

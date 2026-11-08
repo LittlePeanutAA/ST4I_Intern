@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "partinspect"
+version = "0.1.0"
+description = "Unsupervised visual inspection of moulded plastic parts (anomaly detection) for low-power CPUs"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+dependencies = ["numpy", "opencv-python-headless", "pandas", "pillow", "tqdm"]
+
+[project.optional-dependencies]
+train = ["anomalib>=2.0", "torch>=2.1", "torchvision", "scikit-learn"]
+deploy = ["openvino>=2024.0"]  # all the line PC needs (with opencv)
+export = ["openvino>=2024.0", "nncf", "onnx", "onnxscript"]
+dev = ["pytest", "jupyter", "matplotlib"]
+
+[project.scripts]
+partinspect-audit = "partinspect.audit:main"
+partinspect-split = "partinspect.split:main"
+partinspect-run = "partinspect.experiment:main"
+partinspect-report = "partinspect.report:main"
+partinspect-calibrate = "partinspect.calibrate:main"
+partinspect-normalize = "partinspect.normalize:main"
+partinspect-serve = "partinspect.deploy:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

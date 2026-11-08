@@ -1,0 +1,110 @@
+{
+ "model": "padim_r18",
+ "image_size": [
+  256,
+  368
+ ],
+ "precision": "fp16",
+ "folds": [
+  {
+   "fold": 0,
+   "held_out": [
+    "065.png",
+    "110.png"
+   ],
+   "n_train": 180,
+   "seconds": 17.8,
+   "oof_median": 79.34418106079102,
+   "oof_max": 90.89221954345703
+  },
+  {
+   "fold": 1,
+   "held_out": [
+    "111.png",
+    "156.png"
+   ],
+   "n_train": 175,
+   "seconds": 11.3,
+   "oof_median": 55.08769989013672,
+   "oof_max": 67.26392364501953
+  },
+  {
+   "fold": 2,
+   "held_out": [
+    "157.png",
+    "203.png"
+   ],
+   "n_train": 174,
+   "seconds": 11.5,
+   "oof_median": 55.50806427001953,
+   "oof_max": 68.81172180175781
+  },
+  {
+   "fold": 3,
+   "held_out": [
+    "204.png",
+    "249.png"
+   ],
+   "n_train": 175,
+   "seconds": 11.9,
+   "oof_median": 55.07768630981445,
+   "oof_max": 72.2291030883789
+  },
+  {
+   "fold": 4,
+   "held_out": [
+    "250.png",
+    "300.png"
+   ],
+   "n_train": 180,
+   "seconds": 11.6,
+   "oof_median": 53.34307289123535,
+   "oof_max": 62.55256271362305
+  }
+ ],
+ "thresholds": {
+  "oof_p99": 89.38563079833983,
+  "oof_p995": 90.68180389404296,
+  "oof_max": 90.89221954345705
+ },
+ "test": {
+  "image_AUROC": 0.9044017094017094,
+  "image_AP": 0.9615348499546815,
+  "recall@oof_p99": 0.3611111111111111,
+  "FPR@oof_p99": 0.015384615384615385,
+  "recall@oof_p99/burn": 0.4,
+  "recall@oof_p99/edge_chip": 0.85,
+  "recall@oof_p99/edited_mark": 1.0,
+  "recall@oof_p99/edited_text": 0.03333333333333333,
+  "recall@oof_p99/erased_text": 0.0,
+  "recall@oof_p99/missing_mark": 0.25,
+  "recall@oof_p99/scratch": 0.1,
+  "recall@oof_p99/spot": 0.1,
+  "recall@oof_p995": 0.3611111111111111,
+  "FPR@oof_p995": 0.015384615384615385,
+  "recall@oof_p995/burn": 0.4,
+  "recall@oof_p995/edge_chip": 0.85,
+  "recall@oof_p995/edited_mark": 1.0,
+  "recall@oof_p995/edited_text": 0.03333333333333333,
+  "recall@oof_p995/erased_text": 0.0,
+  "recall@oof_p995/missing_mark": 0.25,
+  "recall@oof_p995/scratch": 0.1,
+  "recall@oof_p995/spot": 0.1,
+  "recall@oof_max": 0.35555555555555557,
+  "FPR@oof_max": 0.015384615384615385,
+  "recall@oof_max/burn": 0.4,
+  "recall@oof_max/edge_chip": 0.8,
+  "recall@oof_max/edited_mark": 1.0,
+  "recall@oof_max/edited_text": 0.03333333333333333,
+  "recall@oof_max/erased_text": 0.0,
+  "recall@oof_max/missing_mark": 0.25,
+  "recall@oof_max/scratch": 0.1,
+  "recall@oof_max/spot": 0.1,
+  "FPR@oof_p99/same_session": 0.0,
+  "FPR@oof_p99/new_session": 0.2,
+  "FPR@oof_p995/same_session": 0.0,
+  "FPR@oof_p995/new_session": 0.2,
+  "FPR@oof_max/same_session": 0.0,
+  "FPR@oof_max/new_session": 0.2
+ }
+}

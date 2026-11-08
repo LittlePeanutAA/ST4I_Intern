@@ -1,0 +1,13 @@
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+data/
+outputs/
+logs/
+models/
+results/*/*/weights/
+results/*/lightning/
+*.ckpt
+*.pt
+*.bin

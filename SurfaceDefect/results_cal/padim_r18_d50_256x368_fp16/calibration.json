@@ -1,0 +1,110 @@
+{
+ "model": "padim_r18_d50",
+ "image_size": [
+  256,
+  368
+ ],
+ "precision": "fp16",
+ "folds": [
+  {
+   "fold": 0,
+   "held_out": [
+    "065.png",
+    "110.png"
+   ],
+   "n_train": 180,
+   "seconds": 10.6,
+   "oof_median": 61.04237365722656,
+   "oof_max": 67.93965911865234
+  },
+  {
+   "fold": 1,
+   "held_out": [
+    "111.png",
+    "156.png"
+   ],
+   "n_train": 175,
+   "seconds": 9.9,
+   "oof_median": 36.22131156921387,
+   "oof_max": 48.09329605102539
+  },
+  {
+   "fold": 2,
+   "held_out": [
+    "157.png",
+    "203.png"
+   ],
+   "n_train": 174,
+   "seconds": 10.4,
+   "oof_median": 37.54087829589844,
+   "oof_max": 46.207115173339844
+  },
+  {
+   "fold": 3,
+   "held_out": [
+    "204.png",
+    "249.png"
+   ],
+   "n_train": 175,
+   "seconds": 10.5,
+   "oof_median": 36.0166015625,
+   "oof_max": 51.24231719970703
+  },
+  {
+   "fold": 4,
+   "held_out": [
+    "250.png",
+    "300.png"
+   ],
+   "n_train": 180,
+   "seconds": 9.8,
+   "oof_median": 36.92427444458008,
+   "oof_max": 45.957847595214844
+  }
+ ],
+ "thresholds": {
+  "oof_p99": 65.87074737548828,
+  "oof_p995": 67.33170089721679,
+  "oof_max": 67.93965911865236
+ },
+ "test": {
+  "image_AUROC": 0.8829487179487181,
+  "image_AP": 0.9399759740989515,
+  "recall@oof_p99": 0.13333333333333333,
+  "FPR@oof_p99": 0.0,
+  "recall@oof_p99/burn": 0.4,
+  "recall@oof_p99/edge_chip": 0.75,
+  "recall@oof_p99/edited_mark": 0.0,
+  "recall@oof_p99/edited_text": 0.0,
+  "recall@oof_p99/erased_text": 0.0,
+  "recall@oof_p99/missing_mark": 0.0,
+  "recall@oof_p99/scratch": 0.0,
+  "recall@oof_p99/spot": 0.05,
+  "recall@oof_p995": 0.12777777777777777,
+  "FPR@oof_p995": 0.0,
+  "recall@oof_p995/burn": 0.35,
+  "recall@oof_p995/edge_chip": 0.75,
+  "recall@oof_p995/edited_mark": 0.0,
+  "recall@oof_p995/edited_text": 0.0,
+  "recall@oof_p995/erased_text": 0.0,
+  "recall@oof_p995/missing_mark": 0.0,
+  "recall@oof_p995/scratch": 0.0,
+  "recall@oof_p995/spot": 0.05,
+  "recall@oof_max": 0.11666666666666667,
+  "FPR@oof_max": 0.0,
+  "recall@oof_max/burn": 0.35,
+  "recall@oof_max/edge_chip": 0.7,
+  "recall@oof_max/edited_mark": 0.0,
+  "recall@oof_max/edited_text": 0.0,
+  "recall@oof_max/erased_text": 0.0,
+  "recall@oof_max/missing_mark": 0.0,
+  "recall@oof_max/scratch": 0.0,
+  "recall@oof_max/spot": 0.0,
+  "FPR@oof_p99/same_session": 0.0,
+  "FPR@oof_p99/new_session": 0.0,
+  "FPR@oof_p995/same_session": 0.0,
+  "FPR@oof_p995/new_session": 0.0,
+  "FPR@oof_max/same_session": 0.0,
+  "FPR@oof_max/new_session": 0.0
+ }
+}

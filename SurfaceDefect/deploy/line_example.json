@@ -1,0 +1,7 @@
+{
+  "_comment": "PaDiM-R18 FP16, 256x368. Threshold = mean + 3 std of the 30 held-out good parts (val, v2 split). This dataset holds only 3 physical parts, so this threshold is NOT validated on new parts: recalibrate on the line (README, Recalibration).",
+  "model": "../models/padim_r18_256x368_fp16/model.xml",
+  "threshold": 65.23,
+  "threads": 2,
+  "drift": {"ref_median": 53.09, "ref_spread": 4.18, "window": 50, "max_shift": 3.0, "max_ng_rate": 0.2}
+}
